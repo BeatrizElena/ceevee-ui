@@ -27,7 +27,11 @@ const Skill = Model.extend(Validator, {
    */
   // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
   validations: {
+    name: {
+      presence: true
+    },
     competency: {
+      presence: true,
       numericality: {
         onlyInteger: true,
         greaterThanOrEqualTo: 0,
