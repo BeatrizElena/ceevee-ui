@@ -31,6 +31,7 @@ const Skill = Model.extend(Validator, {
       presence: true
     },
     competency: {
+      presence: true,
       numericality: {
         onlyInteger: true,
         greaterThanOrEqualTo: 0,

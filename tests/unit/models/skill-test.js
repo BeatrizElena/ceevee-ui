@@ -22,6 +22,14 @@ module('Unit | Model | skill', function(hooks) {
     assert.notOk(model.validate());
   });
 
+  test('it does not validate when comptency is missing', function(assert) {
+    let store = this.owner.lookup('service:store');
+    let model = run(() => store.createRecord('skill', {
+      name: 'My Skill'
+    }));
+    assert.notOk(model.validate());
+  });
+
   test('it does not validate when competency is not an integer', function(assert) {
     let store = this.owner.lookup('service:store');
     let model = run(() => store.createRecord('skill', {
