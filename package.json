@@ -21,7 +21,8 @@
     "license:report": "npm run license:check -- -v",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
     "start": "ember serve",
-    "test": "npm run license:check && npm run lint:js && ember test",
+    "pretest": "npm run license:check && npm run lint:js",
+    "test": "ember exam --split=1 --parallel --random",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
@@ -42,6 +43,7 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-data": "~3.1.0",
+    "ember-exam": "^1.0.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
