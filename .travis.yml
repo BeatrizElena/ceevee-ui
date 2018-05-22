@@ -1,7 +1,6 @@
----
 language: node_js
 node_js:
-  - "6"
+  - "9"
 
 sudo: false
 dist: trusty
@@ -24,3 +23,10 @@ before_install:
 script:
   - npm run lint:js
   - npm test
+
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
