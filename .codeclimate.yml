@@ -1,0 +1,17 @@
+plugins:
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  git-legal:
+    enabled: true
+ratings:
+  paths:
+    - "*.js"
+exclude_paths:
+  - config/
+  - coverage/
+  - dist/
+  - ember-cli-build.js
+  - node_modules/
+  - test*
