@@ -1,6 +1,7 @@
 module.exports = {
   test_page: 'tests/index.html?hidepassed',
   disable_watching: true,
+  tap_quiet_logs: true,
   parallel: 1,
   launch_in_ci: [
     'Chrome',
