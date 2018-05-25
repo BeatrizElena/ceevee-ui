@@ -1,6 +1,8 @@
 # ceevee-ui
 
 [![Build Status](https://travis-ci.org/randallmorey/ceevee-ui.svg)](https://travis-ci.org/randallmorey/ceevee-ui)
+[![Maintainability](https://api.codeclimate.com/v1/badges/bac14e062306f6fd6659/maintainability)](https://codeclimate.com/github/randallmorey/ceevee-ui/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/bac14e062306f6fd6659/test_coverage)](https://codeclimate.com/github/randallmorey/ceevee-ui/test_coverage)
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
