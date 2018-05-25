@@ -36,7 +36,7 @@ where `model-name` is replace with the name of the model:
 
 ### Running Tests
 
-* `npm test`
+* `npm test` or
 * `ember test --server`
 
 ### Linting
@@ -53,13 +53,14 @@ where `model-name` is replace with the name of the model:
 
 Specify what it takes to deploy your app.
 
-## Further Reading / Useful Links
+## Releasing
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Releases are automated with [semantic-release][semrel]. Releases are made from
+master branch automatically and published to GitHub and NPM. To initiate a
+release, create a branch `release` off `develop`, then create a PR of `release`
+into `master`.  Once merged to `master`, a release is made and tagged.
+
+[semrel]: https://github.com/semantic-release/semantic-release
 
 ## Contributing
 
