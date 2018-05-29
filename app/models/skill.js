@@ -9,6 +9,8 @@ import Validator from '../mixins/object-validator';
  * @augments ember-model-validator/mixins/object-validator
  * @property name {String}
  * @property competency {Number}
+ * @property updated_at {Date}
+ * @property created_at {Date}
  */
 const Skill = Model.extend(Validator, {
 
