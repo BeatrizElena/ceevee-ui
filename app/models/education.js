@@ -4,7 +4,7 @@ import { belongsTo } from 'ember-data/relationships';
 import Validator from '../mixins/object-validator';
 
 /**
- * Model description goes here.
+ * Education, training, and certifications.
  * @class
  * @augments ember-data/model
  * @augments ember-model-validator/mixins/object-validator
